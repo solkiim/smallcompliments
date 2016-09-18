@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Small Compliments</title>
+    
+    <meta name="description" content="A cute compliment generator to make you smile!"/>
+    <meta name="author" content="Sol Kim"/>
+    <meta name="keywords" content="Compliment, generator, compliments, smile"
+    <meta charset="utf-8"/>
+    <meta property="og:url" content="http://smallcompliments.com"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="smallcompliments.css" type="text/css" media="all"/>
+    <link rel="stylesheet" media="handheld, only screen and (max-width: 479px)" href="mobile.css"/>
+    <link rel="shortcut icon" href="heart.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+</head>
+
+    
+<body onload="generator()">
+    <h1>I think you deserve a compliment...</h1>
+    <img src="hug.jpg" class="center"/>
+
+    <div id="generator">
+        <div id="placeholder"></div>
+        <input type="button" id="but" id="count" value="Compliment me!" onclick="generator();"/>
+    </div>
+
+    <p>Keep your head up!</p>
+    
+    <div id="footer">
+        <p>These compliments were brought to you by <a href="http://solkim.com" target="_blank">Sol Kim</a>.</p>
+    </div>
+        
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-57651907-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
