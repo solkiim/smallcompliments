@@ -10,7 +10,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'ArsenaleWhite';
   src: url('font/ArsenaleWhite.woff') format('woff'),
@@ -28,14 +27,13 @@ html {
     -o-background-size: cover;
     background-size: cover;
     background: #ee9ca7;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background: -webkit-linear-gradient(#ffdde1, #ee9ca7);
     background: -moz-linear-gradient(#ffdde1, #ee9ca7);
     background: -ms-linear-gradient(#ffdde1, #ee9ca7);
     background: -o-linear-gradient(#ffdde1, #ee9ca7);
     background: linear-gradient(#ffdde1, #ee9ca7);
 }
-
 body {
     text-align: center;
 	color: #fff;
@@ -50,7 +48,6 @@ body {
 	align-items: center;
 	text-align: center;
 }
-
 .vertical-center > .container {
 	width: 100%;
 	margin-top: -150px;
@@ -59,33 +56,29 @@ body {
 
 /* --------- BODY --------- */
 #happyimg {
-    width:15em;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    width: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 h1 {
     font-size: 80px;
-	font-family:'Arsenale White';
+	font-family: 'ArsenaleWhite';
 	font-weight: 100;
 	line-height: 20px;
 }
-
 #resultwrapper {
 	padding: 0px 10px;
 }
-
 #result {
-	color:#ff596b;	/*ff6677*/
-	font-family: 'Baron Neue';
+	color: #ff596b;	/*ff6677*/
+	font-family: 'BaronNeue';
 	font-size: 35px;
 	letter-spacing: 4px;
 }
-
 #complimentor {
 	color: #fff;
-	font-family: 'Arsenale White';
+	font-family: 'ArsenaleWhite';
 	font-size: 40px;
 	line-height: 20px;
     background-color: transparent;
@@ -95,10 +88,10 @@ h1 {
     padding: 0px 5px;
 	cursor: pointer;
 }
-
 #complimentor:focus {
     outline: none;
 }
+
 
 /* --------- FOOTER --------- */
 #footer {
@@ -107,14 +100,36 @@ h1 {
 	width: 100%;
 	text-align: center;
 }
-
 #footer p {
     font-size: 30px;
-	font-family: 'Arsenale White';
+	font-family: 'ArsenaleWhite';
 	line-height: 20px;
 }
-
 #footer a {
     color: #ff596b;
     text-decoration: none;
+}
+
+
+/* --------- RESPONSIVE --------- */
+@media screen and (max-width:480px) {
+	.vertical-center > .container {
+		margin-top: -100px;
+	}
+	#happyimg {
+		width: 120px;
+	}
+	h1 {
+		font-size: 65px;
+		font-family: 'ArsenaleWhite';
+		font-weight: 100;
+		line-height: 20px;
+	}
+	#result {
+		font-size: 35px;
+		letter-spacing: 4px;
+	}
+	#footer p {
+		font-size: 25px;
+	}
 }
