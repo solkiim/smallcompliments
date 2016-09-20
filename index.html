@@ -1,13 +1,12 @@
 <html>
 <head>
 	<title>Small Compliments</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
     
     <meta name="description" content="A cute compliment generator to make you smile!"/>
     <meta name="author" content="Sol Kim"/>
-    <meta name="keywords" content="Compliment, generator, compliments, smile"
-    <meta charset="utf-8"/>
-    <meta property="og:url" content="http://smallcompliments.com"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="keywords" content="Compliment, generator, compliments, smile"/>
 
     <link rel="stylesheet" href="css.css" type="text/css" media="all"/>
     <link rel="shortcut icon" href="favicon.ico"/>
@@ -18,16 +17,20 @@
 
     
 <body onload="generator()">
-	<img src="img/happypear1.png" id="happyimg"/>
+	<div class="vertical-center">
+		<div class="container">
+			<img src="img/happypear1.png" id="happyimg"/>
 	
-    <h1>Keep your head up,</h1>
+			<h1>Keep your head up,</h1>
 
-    <div id="resultwrapper"><p id="result"></p></div>
-    <input type="button" id="complimentor" value="(tell me more!)" onclick="generator();"/>
-    
-    <div id="footer">
-        <p>These compliments were brought to you by <a href="http://solkim.com" target="_blank">Sol Kim</a>.</p>
-    </div>
+			<div id="resultwrapper"><p id="result"></p></div>
+			<input type="button" id="complimentor" value="(tell me more!)" onclick="generator();"/>
+		</div>
+		
+		<div id="footer">
+			<p>These compliments were brought to you by <a href="http://solkim.com" target="_blank">Sol Kim</a>.</p>
+		</div>
+	</div>
         
     <!-- Google Analytics -->
     <script>
@@ -39,7 +42,6 @@
         ga('create', 'UA-57651907-1', 'auto');
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
-
     </script>
 </body>
 </html>

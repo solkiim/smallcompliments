@@ -1,6 +1,28 @@
+/* --------- FONT SETUP --------- */
+@font-face {
+  font-family: 'BaronNeue';
+  src: url('font/BaronNeue.eot');
+  src: url('font/BaronNeue.woff2') format('woff2'),
+       url('font/BaronNeue.woff') format('woff'),
+       url('font/BaronNeue.ttf') format('truetype'),
+       url('font/BaronNeue.svg#BaronNeue') format('svg'),
+       url('font/BaronNeue.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArsenaleWhite';
+  src: url('font/ArsenaleWhite.woff') format('woff'),
+       url('font/ArsenaleWhite.ttf') format('truetype'),
+       url('font/ArsenaleWhite.svg#ArsenaleWhite') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* --------- DOC SETUP --------- */
 html {
-	height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,13 +41,28 @@ body {
 	color: #fff;
 }
 
+
+/* --------- VERTICAL CENTERING --------- */
+.vertical-center {
+	height: 100%;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.vertical-center > .container {
+	width: 100%;
+	margin-top: -150px;
+}
+
+
 /* --------- BODY --------- */
 #happyimg {
     width:15em;
     display:block;
     margin-left:auto;
     margin-right:auto;
-	margin-top: 100px;
 }
 
 h1 {
@@ -65,7 +102,7 @@ h1 {
 
 /* --------- FOOTER --------- */
 #footer {
-	position: fixed;
+	position: absolute;
 	bottom: 0px;
 	width: 100%;
 	text-align: center;
@@ -78,6 +115,6 @@ h1 {
 }
 
 #footer a {
-    color: #ff6677;
+    color: #ff596b;
     text-decoration: none;
 }
