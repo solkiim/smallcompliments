@@ -9,10 +9,8 @@
     <meta property="og:url" content="http://smallcompliments.com"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="stylesheet" href="smallcompliments.css" type="text/css" media="all"/>
-    <link rel="stylesheet" media="handheld, only screen and (max-width: 479px)" href="mobile.css"/>
-    <link rel="shortcut icon" href="heart.ico"/>
-    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css.css" type="text/css" media="all"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
     
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="js.js"></script>
@@ -20,15 +18,12 @@
 
     
 <body onload="generator()">
-    <h1>I think you deserve a compliment...</h1>
-    <img src="hug.jpg" class="center"/>
+	<img src="img/happypear1.png" id="happyimg"/>
+	
+    <h1>Keep your head up,</h1>
 
-    <div id="generator">
-        <div id="placeholder"></div>
-        <input type="button" id="but" id="count" value="Compliment me!" onclick="generator();"/>
-    </div>
-
-    <p>Keep your head up!</p>
+    <div id="resultwrapper"><p id="result"></p></div>
+    <input type="button" id="complimentor" value="(tell me more!)" onclick="generator();"/>
     
     <div id="footer">
         <p>These compliments were brought to you by <a href="http://solkim.com" target="_blank">Sol Kim</a>.</p>
